@@ -3,6 +3,7 @@ package org.odk.collect.android.widgets;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.net.Uri;
 import android.view.ViewGroup;
 import android.widget.*;
 import org.javarosa.core.model.QuestionDef;
@@ -29,6 +30,8 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import org.opendatakit.httpclientandroidlib.entity.ContentType;
+
+import static android.support.v4.app.ActivityCompat.startActivity;
 
 /**
  * Widget that allows the user to launch OpenMapKit to get an OSM Feature with a
