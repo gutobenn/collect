@@ -203,7 +203,9 @@ public class OSMWidget extends QuestionWidget implements IBinaryWidget {
             builder.setMessage("Please install OpenMapKit!");
             DialogInterface.OnClickListener okClickListener = new DialogInterface.OnClickListener() {
             	public void onClick(DialogInterface dialog, int id) {
-                    //TODO: launch to app store?
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					intent.setData(Uri.parse("market://details?id=org.redcross.openmapkit"));
+					startActivity(intent);
                 }
             	
             };
